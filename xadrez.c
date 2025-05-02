@@ -11,9 +11,9 @@ int main() {
     int rainha = 8;
     int contador;
     int escolha;
-
+    int count = 0;
     //Prompt o usuario para escolher qual peça movimentar 
-    printf("Escolha qual peça movimentar:\n1 - Torre\n2 - Bispo\n3 - Rainha\nOpcao: ");
+    printf("Escolha qual peça movimentar:\n1 - Torre\n2 - Bispo\n3 - Rainha\n4 - Cavalo\nOpcao: ");
     scanf("%i", &escolha);
     switch (escolha)
     {
@@ -41,7 +41,19 @@ int main() {
             printf("Esquerda\n");
             contador++;
         } while (contador < rainha);
+        break;
+    case 4:
+        // impletando movimento do cavalo
         
+        for(int i = 0; i < 1; i++)
+        {
+            while(count < 2){
+                count++;
+                printf("Baixo\n");
+            }
+            printf("Esquerda\n");
+        }
+    break;
     default:
         break;
     }
